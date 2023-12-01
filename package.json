@@ -7,14 +7,14 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"marketplace": "npx create-web3-dapp marketplace"
+		"marketplace": "node marketplace.js" 
 	},
 	"dependencies": {
 		"next": "13.1.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"alchemy-sdk": "^2.6.2",
-		"@rainbow-me/rainbowkit": "^0.12.4",
+		"alchemy-sdk": "^2.6.2 @secret(ALCHEMY_API_KEY)", 
+		"@rainbow-me/rainbowkit": "^0.12.4 @auth(message-signing)", 
 		"wagmi": "^0.12.6"
 	},
 	"devDependencies": {
